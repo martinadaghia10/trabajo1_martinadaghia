@@ -383,8 +383,8 @@ Ammo().then(function (Ammo) {
         // Aggiungi i controlli alla GUI e assegna i listener
         var timeController = gui.add(guiControls, 'showTime').name('Show time');
         var scoreController = gui.add(guiControls, 'showScore').name('Show score');
-        var ballsLaunchedController = gui.add(guiControls, 'showBallsLaunched').name('Show balls launched');
-        var ballsAvailableController = gui.add(guiControls, 'showBallsAvailable').name('Show balls available');
+        var ballsLaunchedController = gui.add(guiControls, 'showBallsLaunched').name('Show launched balls');
+        var ballsAvailableController = gui.add(guiControls, 'showBallsAvailable').name('Show available balls');
         var ballColorController = gui.addColor(guiControls, 'ballColor').name('Ball color');
 
         // Aggiungi listener per rilevare i cambiamenti nei controlli
@@ -395,17 +395,17 @@ Ammo().then(function (Ammo) {
         ballColorController.onChange(updateBallColor);
 
         var changeTextureButton = {
-            'White': function () { updateGroundTexture('../textures/bianco.jpeg'); },
-            'Wood': function () { updateGroundTexture('../textures/legno.jpeg'); },
-            'Tiles': function () { updateGroundTexture('../textures/piastrelle.jpeg'); },
-            'Grass': function () { updateGroundTexture('../textures/prato.jpeg'); },
-            'Sea': function () { updateGroundTexture('../textures/mare.jpeg'); },
+            'White floor texture': function () { updateGroundTexture('../textures/bianco.jpeg'); },
+            'Wood floor texture': function () { updateGroundTexture('../textures/legno.jpeg'); },
+            'Tiles floor texture': function () { updateGroundTexture('../textures/piastrelle.jpeg'); },
+            'Grass floor texture': function () { updateGroundTexture('../textures/prato.jpeg'); },
+            'Sea floor texture': function () { updateGroundTexture('../textures/mare.jpeg'); },
         };
-        gui.add(changeTextureButton, 'White');
-        gui.add(changeTextureButton, 'Wood');
-        gui.add(changeTextureButton, 'Tiles');
-        gui.add(changeTextureButton, 'Grass');
-        gui.add(changeTextureButton, 'Sea');
+        gui.add(changeTextureButton, 'White floor texture');
+        gui.add(changeTextureButton, 'Wood floor texture');
+        gui.add(changeTextureButton, 'Tiles floor texture');
+        gui.add(changeTextureButton, 'Grass floor texture');
+        gui.add(changeTextureButton, 'Sea floor texture');
 
     }
 
