@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #FCE5CD;
+    margin: 0;
+    overflow: hidden;
+}
+
+#info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+#score {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #333333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#timer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #333333;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#balls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #333333;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#balls span {
+    font-weight: bold;
+}
+
+#ballsAvailable {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    color: #333333;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#ballsAvailable span {
+    font-weight: bold;
+}
+
+
+a {
+    color: #a06851;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.modal-content {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+.modal-content {
+    background-color: #FCE5CD;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #FCE5CD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+#keyDescriptions {
+    font-size: 10px;
+}
+
+.property-name {
+    width: auto;
+}

@@ -1,0 +1,51 @@
+<!--
+    TRABAJO #1 - Aplicaciones Gráficas y Multimedia - AGM
+
+    Autor: MARTINA DAGHIA - mdaghia@etsinf.upv.es
+    Fecha: 13 Marzo 2024
+-->
+<html lang="en">
+
+<head>
+
+    <title>Trabajo 1: Fallen Shape - Martina Daghia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+    <div id="info">FALLEN SHAPES<br>Click to throw the ball and drop the shapes<br> <br>
+        <div id="level"></div>
+        <div id="keyDescriptions">
+            <p>W = zoom in, S = zoom out,</p>
+            <p>↑ = move camera up, ↓ = move camera down, ← = move camera left, → = move camera right</p>
+        </div>
+    </div>
+
+    <div id="container"><br /><br /><br /><br /><br />Loading...</div>
+    <div id="score">Score: <span id="scoreValue"></span></div>
+    <div id="timer">Timer: <span id="timerValue">00:00</span></div>
+    <div id="balls">Balls thrown: <span id="ballsValue">0</span></div>
+    <div id="ballsAvailable">Available balls: <span id="ballsAvailableValue"></span></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalMessage">Message Here</h2>
+            <button onclick="restartGame()">OK</button>
+        </div>
+    </div>
+
+    <script src="../../builds/ammo.js"></script>
+    <script src="../js/three.min.js"></script>
+    <script src="../js/OrbitControls.js"></script>
+    <script src="../js/Detector.js"></script>
+    <script src="../js/stats.min.js"></script>
+    <script src="../js/dat.gui.min.js"></script>
+    <script src="../js/game.js"></script>
+
+</body>
+
+</html>
