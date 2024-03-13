@@ -234,12 +234,12 @@ Ammo().then(function (Ammo) {
         // Aggiungi un gestore degli eventi per la pressione dei tasti
         window.addEventListener('keydown', function (event) {
             // W per muoversi in avanti
-            if (event.key === 'w') {
+            if (event.key === 'w' || event.key === 'W') {
                 // Modifica la posizione della telecamera
                 camera.translateZ(-2); // Modifica questa cifra per regolare la velocità del movimento
             }
             // S per muoversi indietro
-            else if (event.key === 's') {
+            else if (event.key === 's' || event.key === 'S') {
                 // Modifica la posizione della telecamera
                 camera.translateZ(2); // Modifica questa cifra per regolare la velocità del movimento
             }
