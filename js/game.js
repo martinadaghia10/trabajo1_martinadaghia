@@ -544,11 +544,14 @@ Ammo().then(function (Ammo) {
             secondLevel();
         }
 
-        if (level2 && ballsLaunched >= ballsLimit && fallenCubes.length < maxScore && !isSecondLevelTriggered) {
+        if (level2 && ballsLaunched == 20 && fallenCubes.length < maxScore && !isSecondLevelTriggered) {
             gameOver();
         } else if (!level2 && ballsLaunched >= ballsLimit && fallenCubes.length < maxScore && !isSecondLevelTriggered) {
             gameOver();
+        } else if ((level2 && ballsLaunched == 20 || !level2 && ballsLaunched >= ballsLimit) && fallenCubes.length < maxScore && !isSecondLevelTriggered) {         
+            gameOver();
         }
+
 
 
     }
